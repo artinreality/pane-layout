@@ -1,0 +1,274 @@
+@import "css/ui.layout.css";
+@import "css/vanilla.reset.css";
+
+/*
+ *  Outer Layout
+*/
+
+#header {
+  background: url(images/grad-header_dark.png) repeat-x;
+  overflow: hidden;
+}
+
+  #header #accent76 {
+    display: block;
+    width: 76px;
+    height: 44px;
+    float: left;
+    background: url(images/logo_accent76.png) no-repeat;
+    margin-top: -10px; /* Note: Correcting 10px padding coming from top, may be temporary. */
+    text-indent: -9999px;
+  }
+  
+  #header #sign_in {
+    width: 76px;
+    height: 24px;
+    display: block;
+    float: right;
+    text-indent: -9999px;
+    background: url(images/sprite_sign-in.png) 0 0 no-repeat;
+  }
+  
+  #header #sign_in:hover {
+    background: url(images/sprite_sign-in.png) 0 -24px no-repeat;
+  }
+
+#container {
+  background: url(images/texture_light-noise.png) repeat;
+}
+
+#footer {
+  background: url(images/grad-footer_dark.png) repeat-x;
+}
+
+#sidebar {
+  background: url(images/grad_sidebar-shadow.png) right repeat-y,
+              url(images/texture_dark-grain.png) repeat;
+  overflow-x: hidden;
+}
+
+#sidebar_accent {
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center
+}
+
+p.copyright {
+  margin: 0;
+  padding: 0;
+  float: right;
+  line-height: 100%;
+  font-size: 10px;
+  color: #999;
+}
+
+.sb-small ul.primary_nav {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 44px;
+}
+
+.sb-small li.nav_button {
+  width: 43px;
+  height: 43px;
+  list-style: none;
+  background: url(images/sprite_nav-bttns-small.png) 0 0 no-repeat;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.sb-small .bttn_title {
+  display: none;
+}
+
+.sb-small img.bttn_icon {
+  margin: 8px 8px;
+  position: relative;
+}
+
+.sb-small #sidebar_accent {
+  display: none;
+}
+
+/* Primary Navigation, in Sidebar */
+.sb-full ul.primary_nav { /* Primary Navigation Container */
+  margin: 0 auto;
+  padding: 0;
+  max-width: 86px;
+}
+
+.sb-full li.nav_button { /* Navigation Buttons */
+  width: 86px;
+  height: 86px;
+  background: url(images/sprite_nav-bttns.png) 0 0 no-repeat;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 4px 0;
+}
+
+.sb-full li.nav_button:hover {
+  background: url(images/sprite_nav-bttns.png) 0 -86px no-repeat;
+}
+
+li.nav_button a {
+  color: #222;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 6px 0px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.sb-full .nav_button img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: relative;
+  top: 8px;
+  margin: 12px auto;
+}
+
+/* Navigation Button Icons */
+#btnDashboard img {
+  background: url(images/sprite_icons.png) 0 0 no-repeat;
+}
+
+#btnBlog img {
+  background: url(images/sprite_icons.png) -108px 0 no-repeat;
+}
+
+#btnPublicSandbox img {
+  background: url(images/sprite_icons.png) -54px 0 no-repeat;
+}
+
+#btnDesign img {
+  background: url(images/sprite_icons.png) -72px 0 no-repeat;
+}
+
+#btnPhotos img {
+  background: url(images/sprite_icons.png) -90px 0 no-repeat;
+}
+
+#btnSales img {
+  background: url(images/sprite_icons.png) -36px 0 no-repeat;
+}
+
+#btnContactMe img {
+  background: url(images/sprite_icons.png) -18px 0 no-repeat;
+}
+
+/*
+ *  Inner Layout
+*/
+
+#container {
+  padding: 0;
+}
+
+#breadcrumb {
+  padding: 0;
+  background: url(images/grad_breadcrumb22-orange.png) repeat-x;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  color: #fefefe;
+  line-height: 22px;
+  padding-left: 18px;
+}
+
+#content {
+  background: url(images/texture_light-noise.png) repeat;
+}
+
+#content_header {
+  height: 115px;
+  background: url(images/grad_content_header-dark.png) repeat-x;
+  margin: -10px -10px 0 -10px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  color: #aaa;
+}
+
+#content_header .meta {
+	font-size: .856em;
+	margin-left: 12px;
+}
+
+#content_header h1 {
+	margin: 22px 0 0 12px;
+}
+
+#right_bar {
+  background: url(images/logo_corner_accent138.png) top left no-repeat,
+    url(images/texture_medium-noise.png) repeat;
+}
+
+.right_bar_widgets {
+  margin: 64px auto 0;
+  padding: 0px;
+  width: 248px;
+}
+
+.widget_head {
+  padding: 0 10px;
+  cursor: pointer;
+  color: #fefefe;
+  line-height: 24px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  position: relative;
+  background: url(images/grad_pane_headers24.png) repeat-x;
+  height: 24px;
+  margin: 24px 0 0 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.widget_body {
+  padding: 0 10px 15px;
+  background: url(images/texture_dark-noise.png) repeat;
+  margin-bottom: 24px;
+  color: #ccc;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.widget_body h4 {
+  margin: 0;
+  font-size: 22px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+span.bullet {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-right: 4px;
+}
+
+/* Bullet-image class, apply to each id for old browsers. */
+span.bullet-image, #icon_top_posts, #icon_twitter {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top:50%;
+  margin-top: -9px;
+  display: block;
+  float: left;
+  text-indent: -9999px;
+}
+
+/* Set the icons */
+#icon_top_posts {
+    background: url(images/sprite_icons.png) -180px 0 no-repeat;
+}
+
+#icon_twitter {
+    background: url(images/sprite_icons.png) -198px 0 no-repeat;
+}
