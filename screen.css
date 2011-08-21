@@ -231,12 +231,13 @@ li.nav_button a {
 }
 
 .widget_body {
-  padding: 0 10px 15px;
+  padding: 8px;
   background: url(images/texture_dark-noise.png) repeat;
   margin-bottom: 24px;
   color: #ccc;
   font-size: 13px;
   line-height: 20px;
+  overflow: hidden;
 }
 
 .widget_body h4 {
@@ -251,6 +252,24 @@ span.bullet {
   font-size: 1.4em;
   margin-right: 4px;
 }
+
+ul.posts {
+  margin: 0;
+  width: 190px;
+}
+
+  ul.posts li {
+    margin-bottom: 8px;
+  }
+
+  ul.posts a {
+    color: #ccc;
+    line-height: .6em;
+  }
+  
+  ul.posts a:hover {
+    text-decoration: none;
+  }
 
 /* Bullet-image class, apply to each id for old browsers. */
 span.bullet-image, #icon_top_posts, #icon_twitter {
