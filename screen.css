@@ -10,28 +10,28 @@
   overflow: hidden;
 }
 
-  #header #accent76 {
-    display: block;
-    width: 76px;
-    height: 44px;
-    float: left;
-    background: url(images/logo_accent76.png) no-repeat;
-    margin-top: -10px; /* Note: Correcting 10px padding coming from top, may be temporary. */
-    text-indent: -9999px;
-  }
-  
-  #header #sign_in {
-    width: 76px;
-    height: 24px;
-    display: block;
-    float: right;
-    text-indent: -9999px;
-    background: url(images/sprite_sign-in.png) 0 0 no-repeat;
-  }
-  
-  #header #sign_in:hover {
-    background: url(images/sprite_sign-in.png) 0 -24px no-repeat;
-  }
+#header #logo272 {
+  display: block;
+  width: 272px;
+  height: 44px;
+  float: left;
+  background: url(images/logo_accent272.png) no-repeat;
+  margin-top: -10px; /* Note: Correcting 10px padding coming from top, may be temporary. */
+  text-indent: -9999px;
+}
+
+#header #sign_in {
+  width: 76px;
+  height: 24px;
+  display: block;
+  float: right;
+  text-indent: -9999px;
+  background: url(images/sprite_sign-in.png) 0 0 no-repeat;
+}
+
+#header #sign_in:hover {
+  background: url(images/sprite_sign-in.png) 0 -24px no-repeat;
+}
 
 #container {
   background: url(images/texture_light-noise.png) repeat;
@@ -43,7 +43,7 @@
 
 #sidebar {
   background: url(images/grad_sidebar-shadow.png) right repeat-y,
-              url(images/texture_dark-grain.png) repeat;
+    url(images/texture_dark-grain.png) repeat;
   overflow-x: hidden;
 }
 
@@ -196,12 +196,12 @@ li.nav_button a {
 }
 
 #content_header .meta {
-	font-size: .856em;
-	margin-left: 12px;
+  font-size: .856em;
+  margin-left: 12px;
 }
 
 #content_header h1 {
-	margin: 22px 0 0 12px;
+  margin: 22px 0 0 12px;
 }
 
 #right_bar {
@@ -266,9 +266,9 @@ span.bullet-image, #icon_top_posts, #icon_twitter {
 
 /* Set the icons */
 #icon_top_posts {
-    background: url(images/sprite_icons.png) -180px 0 no-repeat;
+  background: url(images/sprite_icons.png) -180px 0 no-repeat;
 }
 
 #icon_twitter {
-    background: url(images/sprite_icons.png) -198px 0 no-repeat;
+  background: url(images/sprite_icons.png) -198px 0 no-repeat;
 }
