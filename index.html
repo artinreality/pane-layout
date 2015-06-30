@@ -1,13 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<!-- UI.Layout Multi-Sidebar, Full Frame Test Layout by Art In Reality, LLC -->
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
 
-    <title>UI.Layout Multi-Sidebar, Full Frame Test</title>
+    <title>UI.Layout Multi-Sidebar, Full Frame Experiment</title>
 
     <link type="text/css" rel="stylesheet" href="screen.css" />
     <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/black-tie/ui.all.css" rel="stylesheet" />
@@ -15,14 +11,14 @@
     <!--
         jQuery UI and UI.layout
     -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="http://layout.jquery-dev.net/lib/js/jquery.layout-latest.js"></script>
 
     <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function () {
-    
+
         var header_height = 44; // height of the outer header pane
         var footer_height = 34; // height of the outer footer pane
         var sidebar_width_large = 122; // large sidebar width
@@ -30,7 +26,7 @@
         var sidebar_min_height = 743; // minimum size before toggling
         var sidebar_id = $('#sidebar'); // the sidebar ID
         var sidebar_current_size;
-        
+
         function toggle_sidebar(sidebar_class) {
           //switch between .sb-full and .sb-small
           switch (sidebar_class)
@@ -42,7 +38,7 @@
               outerLayout.options.west.size = sidebar_width_small;
               sidebar_current_size = 'small';
               sidebar_id.addClass('sb-small');
-              
+
               break;
             case 'large':
               if ( sidebar_id.hasClass('sb-small') ) {
@@ -54,11 +50,11 @@
               break;
           }
         };
-    
+
         function determine_sidebar_class() {
           // container height is viewport height minus header and footer
           var container_height = $(window).height() - (header_height+footer_height);
-          
+
           // determine if container height less than min toggle height
           if (container_height < sidebar_min_height)
           {
@@ -69,9 +65,9 @@
             toggle_sidebar('large'); // full size
           }
         };
-    
+
         /* UI.layout settings */
-        var outerLayout = $('body').layout({ 
+        var outerLayout = $('body').layout({
           applyDefaultStyles: false, /* NOTE: Temporary. Toggle as needed */
           north__size: header_height,
           north__closable: false,
@@ -88,7 +84,7 @@
           west__fxSettings_close: { easing: "easeOutBounce", duration: 750 },
           onresize_end: determine_sidebar_class
         });
-    
+
         var innerLayout = $('#container').layout({
           applyDefaultStyles: false,
           fxName: "slide",
@@ -104,15 +100,15 @@
           center__maxSize: 0,
           east__minSize: 288
         });
-        
+
         // Determine initial sidebar class.
         determine_sidebar_class();
-            
+
         /* Turn right_bar panes into accordians. */
         $(".widget_head").click(function() { // Toggle class msg_body w/effect
           $(this).next(".widget_body").slideToggle(700);
         });
-        
+
       });
       //]]>
     </script>
@@ -152,7 +148,7 @@
         <div id="content_header">
           <img src="images/sample-header859.jpg" width="859" height="90" alt="Sample Header" />
         </div><!-- end div#content_header -->
-        
+
         <!-- Main Content Area -->
         <h1>UI.Layout Full Frame, Flexible Layout Test</h1>
         <p>Posted by <span>Chris Vogt</span> in General on June 11, 2011</p>
@@ -194,7 +190,7 @@
 
     <div id="sidebar">
       <ul class="primary_nav">
-        
+
         <li id="btnDashboard" class="nav_button">
           <a href="#" title="Dashboard">
             <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Dashboard" />
@@ -241,11 +237,11 @@
           <img src="images/accent_pulse.png" width="75" height="77" alt="Art In Reality, LLC" />
         </li>
       </ul>
-      
+
     </div>
 
     <div id="footer">
-      <p class="copyright">&copy; 2011 Art In Reality, LLC</p>
+      <p class="copyright">&copy; 2011-15 Art In Reality, LLC</p>
     </div>
 
   </body>
