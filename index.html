@@ -1,24 +1,148 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-
-    <title>UI.Layout Multi-Sidebar, Full Frame Experiment</title>
-
-    <link type="text/css" rel="stylesheet" href="screen.css" />
-    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/black-tie/ui.all.css" rel="stylesheet" />
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--
-        jQuery UI and UI.layout
-    -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="http://layout.jquery-dev.net/lib/js/jquery.layout-latest.js"></script>
+        brought to you by...
+   ██████╗ ██╗██╗   ██╗ ██████╗
+  ██╔════╝███║██║   ██║██╔═████╗
+  ██║     ╚██║██║   ██║██║██╔██║
+  ██║      ██║╚██╗ ██╔╝████╔╝██║
+  ╚██████╗ ██║ ╚████╔╝ ╚██████╔╝
+   ╚═════╝ ╚═╝  ╚═══╝   ╚═════╝
+       chrisvogt.me | @c1v0
+     -->
+    <meta name="robots" content="index, follow">
 
-    <script type="text/javascript">
-      //<![CDATA[
+    <title>UI.Layout Experiment</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/black-tie/ui.all.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/typeplate/starter-kit/master/css/typeplate.css">
+    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div id="header">
+      <a href="#" id="logo272">
+        Art In Reality, LLC
+      </a>
+      <a href="#" id="sign_in" title="Sign In">Sign In</a>
+    </div>
+
+    <div class="ui-layout-center" id="container">
+      <div id="breadcrumb">Breadcrumb -> Category -> 'Page Title' </div>
+      <div id="content">
+
+        <div id="content_header">
+          <img src="images/sample-header859.jpg" width="859" height="90" alt="Sample Header">
+        </div><!-- end div#content_header -->
+
+        <!-- Main Content Area -->
+        <h1>UI.Layout Experiment</h1>
+        <p>Posted by <i class="fa fa-user"></i> <span>Chris Vogt</span> in <i class="fa fa-bookmark"></i> General on <i class="fa fa-calendar"></i> June 11, 2011</p>
+        <p>Nullam tristique, massa ac gravida congue, leo mauris rhoncus leo, a tincidunt lorem erat sed sapien. Suspendisse iaculis fermentum auctor. Aliquam non quam non elit laoreet aliquet nec sed velit. Cras tincidunt, libero ut feugiat hendrerit, arcu arcu mattis quam, ac vestibulum dolor augue id nibh. Cras vel est dolor. Fusce urna sapien, viverra id ullamcorper sed, semper a enim. In dapibus nulla nec lorem cursus ut vulputate lorem pretium.</p>
+        <p>Donec ut risus commodo sem pellentesque sodales vitae nec urna. Aliquam mauris sapien, sagittis non viverra a, egestas id magna. Donec diam nunc, vehicula id tempor ac, eleifend eget nunc. Ut aliquam enim eu nisi rutrum in volutpat risus fermentum. Donec ac metus diam. Pellentesque a semper leo. Nunc a pharetra ante. Aenean accumsan sollicitudin ultricies. Suspendisse sit amet tortor ac est eleifend vehicula ut id urna. Fusce consectetur, leo at ultricies condimentum, lectus magna viverra diam, id rhoncus massa sapien a velit. Aliquam in velit sit amet tellus tincidunt fringilla et in justo.</p>
+        <!-- end Main Content Area -->
+
+      </div><!-- end div#content -->
+
+      <div id="right_bar">
+
+        <div class="right_bar_widgets">
+          <!-- start TOP POSTS WIDGET -->
+          <p class="widget_head"><span id="icon_top_posts" class="bullet bullet-image">&rsaquo;</span> Top Posts</p>
+          <div class="widget_body">
+            <h4>Top Posts In <span>General</span></h4>
+            <ul class="posts">
+              <li><a href="#">Donec auctor risus vitae dui tincidunt adipiscing.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+              <li><a href="#">Morbi nec nisl vel mi tincidunt venenatis.</a></li>
+            </ul>
+          </div>
+          <!-- end TOP POSTS WIDGET -->
+
+          <!-- start TWITTER WIDGET -->
+          <p class="widget_head"><span id="icon_twitter" class="bullet bullet-image">&rsaquo;</span> Twitter</p>
+          <div class="widget_body">
+            <h4>Latest Tweet</h4>
+            <!-- Twitter widget content. -->
+          </div>
+          <p class="widget_head">Example Pane</p>
+          <div class="widget_body">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit orem ipsum dolor sit amet, consectetuer adipiscing elit
+          </div>
+          <!-- end TWITTER WIDGET -->
+        </div>
+      </div><!-- end div.right_bar_widgets -->
+    </div><!-- end div#right_bar -->
+
+    <div id="sidebar">
+      <ul class="primary_nav">
+
+        <li id="btnDashboard" class="nav_button">
+          <a href="#" title="Dashboard">
+            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Dashboard" />
+            <span class="bttn_title">Dashboard</span>
+          </a>
+        </li>
+        <li id="btnBlog" class="nav_button">
+          <a href="#" title="Blog">
+            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Blog">
+            <span class="bttn_title">Blog</span>
+          </a>
+        </li>
+        <li id="btnPublicSandbox" class="nav_button">
+          <a href="#" title="Projects">
+            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Projects">
+            <span class="bttn_title">Projects</span>
+          </a>
+        </li>
+        <li id="btnDesign" class="nav_button">
+          <a href="#" title="Design">
+            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Design">
+            <span class="bttn_title">Design</span>
+          </a>
+        </li>
+        <li id="btnPhotos" class="nav_button">
+          <a href="#" title="Photos">
+            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Photos">
+            <span class="bttn_title">Photos</span>
+          </a>
+        </li>
+        <li id="btnSales" class="nav_button">
+          <a href="#" title="Sales">
+            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Sales">
+            <span class="bttn_title">Sales</span>
+          </a>
+        </li>
+        <li id="btnContactMe" class="nav_button">
+          <a href="#" title="Contact Me">
+            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Contact Me">
+            <span class="bttn_title">Contact Me</span>
+          </a>
+        </li>
+        <li id="sidebar_accent">
+          <img src="images/accent_pulse.png" width="75" height="77" alt="Art In Reality, LLC">
+        </li>
+      </ul>
+
+    </div>
+
+    <div id="footer">
+      <p class="copyright">&copy; 2011-15 Art In Reality, LLC</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-layout/1.4.3/jquery.layout.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cufon/1.09i/cufon-yui.js"></script>
+    <script src="js/Share-Regular_400.font.js"></script>
+<script>
       $(document).ready(function () {
-
         var header_height = 44; // height of the outer header pane
         var footer_height = 34; // height of the outer footer pane
         var sidebar_width_large = 122; // large sidebar width
@@ -108,141 +232,14 @@
         $(".widget_head").click(function() { // Toggle class msg_body w/effect
           $(this).next(".widget_body").slideToggle(700);
         });
-
       });
-      //]]>
-    </script>
 
-    <!--
-        CUFON
-    -->
-    <script type="text/javascript" src="https://raw.github.com/sorccu/cufon/master/js/cufon.js"></script>
-    <script type="text/javascript" src="js/Share-Regular_400.font.js"></script>
-
-    <script type="text/javascript">
-      //<![CDATA[
       Cufon.replace('h1', {
         color: '#222222'
       });
       Cufon.replace('h4', {
         color: '#fefefe'
       });
-      //]]>
     </script>
-
-  </head>
-
-  <body>
-
-    <div id="header">
-      <a href="#" id="logo272">
-        Company Logo
-      </a>
-      <a href="#" id="sign_in" title="Sign In">Sign In</a>
-    </div>
-
-    <div class="ui-layout-center" id="container">
-      <div id="breadcrumb">Breadcrumb -> Category -> 'Page Title' </div>
-      <div id="content">
-
-        <div id="content_header">
-          <img src="images/sample-header859.jpg" width="859" height="90" alt="Sample Header" />
-        </div><!-- end div#content_header -->
-
-        <!-- Main Content Area -->
-        <h1>UI.Layout Full Frame, Flexible Layout Test</h1>
-        <p>Posted by <span>Chris Vogt</span> in General on June 11, 2011</p>
-        <p>Nullam tristique, massa ac gravida congue, leo mauris rhoncus leo, a tincidunt lorem erat sed sapien. Suspendisse iaculis fermentum auctor. Aliquam non quam non elit laoreet aliquet nec sed velit. Cras tincidunt, libero ut feugiat hendrerit, arcu arcu mattis quam, ac vestibulum dolor augue id nibh. Cras vel est dolor. Fusce urna sapien, viverra id ullamcorper sed, semper a enim. In dapibus nulla nec lorem cursus ut vulputate lorem pretium.</p>
-        <p>Donec ut risus commodo sem pellentesque sodales vitae nec urna. Aliquam mauris sapien, sagittis non viverra a, egestas id magna. Donec diam nunc, vehicula id tempor ac, eleifend eget nunc. Ut aliquam enim eu nisi rutrum in volutpat risus fermentum. Donec ac metus diam. Pellentesque a semper leo. Nunc a pharetra ante. Aenean accumsan sollicitudin ultricies. Suspendisse sit amet tortor ac est eleifend vehicula ut id urna. Fusce consectetur, leo at ultricies condimentum, lectus magna viverra diam, id rhoncus massa sapien a velit. Aliquam in velit sit amet tellus tincidunt fringilla et in justo.</p>
-        <!-- end Main Content Area -->
-
-      </div><!-- end div#content -->
-
-      <div id="right_bar">
-
-        <div class="right_bar_widgets">
-          <!-- start TOP POSTS WIDGET -->
-          <p class="widget_head"><span id="icon_top_posts" class="bullet bullet-image">&rsaquo;</span> Top Posts</p>
-          <div class="widget_body">
-            <h4>Top Posts In <span>General</span></h4>
-            <ul class="posts">
-              <li><a href="#">Donec auctor risus vitae dui tincidunt adipiscing.</a></li>
-              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-              <li><a href="#">Morbi nec nisl vel mi tincidunt venenatis.</a></li>
-            </ul>
-          </div>
-          <!-- end TOP POSTS WIDGET -->
-
-          <!-- start TWITTER WIDGET -->
-          <p class="widget_head"><span id="icon_twitter" class="bullet bullet-image">&rsaquo;</span> Twitter</p>
-          <div class="widget_body">
-            <h4>Latest Tweet</h4>
-            <!-- Twitter widget content. -->
-          </div>
-          <p class="widget_head">Example Pane</p>
-          <div class="widget_body">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit orem ipsum dolor sit amet, consectetuer adipiscing elit
-          </div>
-          <!-- end TWITTER WIDGET -->
-        </div>
-      </div><!-- end div.right_bar_widgets -->
-    </div><!-- end div#right_bar -->
-
-    <div id="sidebar">
-      <ul class="primary_nav">
-
-        <li id="btnDashboard" class="nav_button">
-          <a href="#" title="Dashboard">
-            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Dashboard" />
-            <span class="bttn_title">Dashboard</span>
-          </a>
-        </li>
-        <li id="btnBlog" class="nav_button">
-          <a href="#" title="Blog">
-            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Blog" />
-            <span class="bttn_title">Blog</span>
-          </a>
-        </li>
-        <li id="btnPublicSandbox" class="nav_button">
-          <a href="#" title="Public Sandbox">
-            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Public Sandbox" />
-            <span class="bttn_title">Public Sandbox</span>
-          </a>
-        </li>
-        <li id="btnDesign" class="nav_button">
-          <a href="#" title="Design">
-            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Design" />
-            <span class="bttn_title">Design</span>
-          </a>
-        </li>
-        <li id="btnPhotos" class="nav_button">
-          <a href="#" title="Photos">
-            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Photos" />
-            <span class="bttn_title">Photos</span>
-          </a>
-        </li>
-        <li id="btnSales" class="nav_button">
-          <a href="#" title="Sales">
-            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Sales" />
-            <span class="bttn_title">Sales</span>
-          </a>
-        </li>
-        <li id="btnContactMe" class="nav_button">
-          <a href="#" title="Contact Me">
-            <img src="trans.gif" class="bttn_icon" width="18" height="18" alt="Contact Me" />
-            <span class="bttn_title">Contact Me</span>
-          </a>
-        </li>
-        <li id="sidebar_accent">
-          <img src="images/accent_pulse.png" width="75" height="77" alt="Art In Reality, LLC" />
-        </li>
-      </ul>
-
-    </div>
-
-    <div id="footer">
-      <p class="copyright">&copy; 2011-15 Art In Reality, LLC</p>
-    </div>
-
   </body>
 </html>

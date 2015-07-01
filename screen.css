@@ -43,7 +43,7 @@
 
 #sidebar {
   background: url(images/grad_sidebar-shadow.png) right repeat-y,
-    url(images/texture_dark-grain.png) repeat;
+    url(images/dark_mosaic.png) repeat;
   overflow-x: hidden;
 }
 
@@ -59,7 +59,7 @@ p.copyright {
   padding: 0;
   float: right;
   line-height: 100%;
-  font-size: 10px;
+  font-size: .714em;
   color: #999;
 }
 
@@ -122,7 +122,7 @@ li.nav_button a {
   padding: 6px 0px;
   font-weight: bold;
   text-decoration: none;
-  font-size: 12px;
+  font-size: .857em;
 }
 
 .sb-full .nav_button img {
@@ -174,7 +174,7 @@ li.nav_button a {
 #breadcrumb {
   padding: 0;
   background: url(images/grad_breadcrumb22-orange.png) repeat-x;
-  font-size: 10px;
+  font-size: .714em;
   font-family: Arial, sans-serif;
   color: #fefefe;
   line-height: 22px;
@@ -206,7 +206,7 @@ li.nav_button a {
 
 #right_bar {
   background: url(images/logo_corner_accent138.png) top left no-repeat,
-    url(images/texture_medium-noise.png) repeat;
+    url(images/dark_mosaic.png) repeat;
 }
 
 .right_bar_widgets {
@@ -221,7 +221,7 @@ li.nav_button a {
   color: #fefefe;
   line-height: 24px;
   font-family: Arial, sans-serif;
-  font-size: 11px;
+  font-size: .768em;
   position: relative;
   background: url(images/grad_pane_headers24.png) repeat-x;
   height: 24px;
@@ -235,14 +235,14 @@ li.nav_button a {
   background: url(images/texture_dark-noise.png) repeat;
   margin-bottom: 24px;
   color: #ccc;
-  font-size: 13px;
+  font-size: .929em;
   line-height: 20px;
   overflow: hidden;
 }
 
 .widget_body h4 {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.571em;
   padding: 8px 0;
   text-align: center;
 }
@@ -266,7 +266,7 @@ ul.posts {
     color: #ccc;
     line-height: .6em;
   }
-  
+
   ul.posts a:hover {
     text-decoration: none;
   }
